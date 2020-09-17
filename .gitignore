@@ -114,3 +114,5 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+# nodemon.json includes password
+nodemon.json
