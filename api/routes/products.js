@@ -10,10 +10,11 @@ router.get('/',(req,res,next) => {
     .select("name price _id")
     .exec()
     .then(docs =>{
-        const {length,name,price,_id}=docs;
+        
         const response ={
-            count : length,
+            count : docs.length,
             products: docs.map(doc => {
+                const {name,price,_id}=doc;
                 return {
                     name,
                     price,
