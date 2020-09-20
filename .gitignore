@@ -116,3 +116,5 @@ dist
 .pnp.*
 # nodemon.json includes password
 nodemon.json
+#images
+uploads
